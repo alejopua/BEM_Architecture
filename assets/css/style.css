@@ -1,0 +1,343 @@
+.head {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.menu__lista {
+    display: flex;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #808080;
+    margin-right: 1.25rem;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+.menu__link--activo {
+    color: #333333;
+}
+
+
+/* banner */
+
+.banner {
+    position: relative;
+}
+
+.banner__image {
+    background: url('../img/banner.png') no-repeat center center/cover;
+    width: 100%;
+    height: 50vh;
+}
+
+.banner__title {
+    color: #fdfdfd;
+    font-family: pacifico, cursive;
+    font-size: 5.0625rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+/*Sobre*/
+
+.sobre {
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.sobre__title {
+    color: #da2b1f;
+    font-family: pacifico, cursive;
+    font-size: 3.1875rem;
+}
+
+.sobre__descripcion {
+    color: #8c8888;
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+/*Recetas*/
+
+.recetas {
+    background: #dab997; ;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.receta {
+    width: 30%;
+    background: #f9f9f9;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* La propiedad flex tiene tres valores separados por espacios:
+
+flex-grow (valor: 1): Indica cómo el elemento puede crecer en relación con los demás elementos dentro del contenedor flexible. En este caso, flex-grow está establecido en 1, lo que significa que el elemento puede crecer para ocupar espacio adicional si hay espacio disponible.
+
+flex-shrink (valor: 1): Indica cómo el elemento puede encogerse en relación con los demás elementos dentro del contenedor flexible. Aquí, flex-shrink también está establecido en 1, lo que significa que el elemento puede encogerse si no hay suficiente espacio disponible para mostrar todos los elementos de manera completa.
+
+flex-basis (valor: auto): Especifica el tamaño inicial del elemento antes de que se distribuya el espacio adicional o se realice el encogimiento. En este caso, flex-basis está establecido en auto, lo que significa que el tamaño inicial del elemento se determinará automáticamente por el navegador según su contenido y las reglas de diseño establecidas. */
+
+.receta__info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: space-between;
+}
+
+.receta__imagen {
+    object-fit: cover;
+}
+
+.receta__title {
+    font-size: 1.4375rem;
+}
+
+.receta__descripcion {
+    font-size: 1.1875rem;
+    text-align: justify;
+}
+
+.receta__button {
+    background: #da2b1f;
+    color: #fdfdfd;
+    border: none;
+    border-radius: 0.7rem;
+    font-size: 1.1875rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.receta__button:hover {
+    cursor: pointer;
+    background: #b21e17;
+}
+
+/*Quienes*/
+
+.quienes {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.quienes__title {
+    color: #da2b1f;
+    font-family: pacifico, cursive;
+    font-size: 2.2rem;
+}
+
+.quienes__description {
+    color: #8c8888;
+    font-size: 1.35rem;
+    font-weight: 200;
+}
+
+.people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.person {
+    width: 30%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person__image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.person__image--roberta {
+    background-image: url('../img/personas/roberta.jpg');
+}
+
+.person__image--marcela {
+    background-image: url('../img/personas/marcela.jpg');
+}
+
+.person__image--andrea {
+    background-image: url('../img/personas/andrea.jpg');
+}
+
+.person__name {
+    color: #da2b1f;
+    font-family: pacifico, cursive;
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.person__description {
+    color: #8c8888;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/*Rodapie*/
+
+.rodapie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.rodapie__title{
+    display: flex;
+    color: #8c8888;
+    font-size: 1.25rem;
+    font-weight: 400;
+    align-items: center;
+    padding: 1.5625rem;
+}
+
+.rodapie__description {
+    display: flex;
+    color: #8c8888;
+    font-size: 2rem;
+}
+
+.rodapie__lista {
+    display: flex;
+}
+
+.rodapie__item {
+    list-style: none;
+}
+
+.rodapie__icon {
+    margin-right: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+    .head {
+        justify-content: center;
+    }
+
+    .head__logo {
+        display: none;
+    }
+
+    .menu__lista {
+        align-items: center;
+    }
+
+    .menu__item {
+        list-style: none;
+        padding: 0 1rem 0 1rem;
+        text-align: center;
+    }
+
+    .menu__link {
+        margin: 0;
+    }
+
+    .banner__title {
+        font-size: 3.0625rem;
+        width: auto;
+    }
+
+    .banner__image {
+        height: 40vh;
+    }
+
+    .sobre {
+        padding: 1.5rem;
+    }
+
+    .sobre__title {
+        font-size: 2.2rem;
+    }
+
+    .sobre__descripcion {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+
+    .recetas {
+        flex-direction: column;
+        padding: 2rem 0 2rem 0;
+        flex-wrap: nowrap;
+    }
+
+    .receta {
+        width: 75%;
+    }
+
+    .quienes__description {
+        font-weight: 300;
+    }
+
+    .people {
+        flex-direction: column;
+    }
+
+    .person {
+        width: auto;
+    }
+
+    .person__image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .rodapie {
+    flex-direction: column;
+    }
+
+    .rodapie__description {
+        margin: 0;
+    }
+
+    .rodapie__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .rodapie__img {
+        width: 70%;
+    }
+
+}
